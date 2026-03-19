@@ -4,5 +4,5 @@ A small project I made in my video :)
 #Requirements
 - Arduino UNO
 - RGB LED
-- Resistors
+- Resistors (220 ohms)
 - Jumper Wires
