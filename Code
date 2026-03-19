@@ -1,0 +1,35 @@
+const int greenPin = 9;
+const int bluePin = 10;
+const int redPin = 11;
+
+ void setup() {
+  pinMode(greenPin, OUTPUT);
+  pinMode(bluePin, OUTPUT);
+  pinMode(redPin, OUTPUT);
+ }
+
+ void setColor(int red, int blue, int green) {
+      analogWrite(redPin, red);
+      analogWrite(bluePin, blue);
+      analogWrite(greenPin, green);
+ } 
+
+
+ void loop() {
+
+  setColor(255,0,0); // RED 
+  delay(2000);
+ 
+  
+  setColor(0,0,255); // BLUE
+  delay(2000);
+
+  for (int i = 0 ; i < 4; i++){
+    setColor(255,0,0) ;
+  delay(500);
+    setColor(0,0,255);
+  delay(500);
+ }
+  setColor(255,0,255);
+  delay(5000); //PURPLE
+ }
